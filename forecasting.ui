@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_Forecasting</class>
+ <widget class="QDialog" name="Dialog_Forecasting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>负荷预测</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>forecast.jpeg</normaloff>forecast.jpeg</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="label_Title">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>30</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>未来负荷预测</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Forecasting">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>预测算法：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_close">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>450</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Paramter">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>131</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>参数因子：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ProjectName">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>300</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit_End">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>350</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="maximumDate">
+    <date>
+     <year>2007</year>
+     <month>12</month>
+     <day>31</day>
+    </date>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="displayFormat">
+    <string>yyyy/M/d</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit_Start">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>350</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="time">
+    <time>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+    </time>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="maximumDate">
+    <date>
+     <year>2007</year>
+     <month>12</month>
+     <day>31</day>
+    </date>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2007</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="maximumTime">
+    <time>
+     <hour>23</hour>
+     <minute>59</minute>
+     <second>59</second>
+    </time>
+   </property>
+   <property name="displayFormat">
+    <string>yyyy/M/d</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_dateset">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>220</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>DataSet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dataset2005</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dataset2006</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dataset2007</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="Button_ok">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>450</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Forecasting">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>160</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>SVM回归分析</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>均值修正预测</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>多元线性回归</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_DataSource">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>131</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>数   据   源：</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Season">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>405</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>季节</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Holiday">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>405</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>节假日</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ProjectName">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>项   目   名：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TimeRange">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>时间范围：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ForecastType">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>预测类型：</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_single">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>290</y>
+     <width>115</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>单天预测</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_range">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>290</y>
+     <width>115</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>范围预测</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

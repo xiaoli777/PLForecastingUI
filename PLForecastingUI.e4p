@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project PLForecastingUI -->
+<!-- Saved: 2017-03-17, 18:17:44 -->
+<!-- Copyright (C) 2017 ,  -->
+<Project version="5.1">
+  <Language>en_US</Language>
+  <Hash>a2a12d1c9b4d3607ae75887d71e04989eb1690c4</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>BPpower2005.py</Source>
+    <Source>SVMPredict.py</Source>
+    <Source>TopologyPredict.py</Source>
+    <Source>Ui_New.py</Source>
+    <Source>Ui_forecasting.py</Source>
+    <Source>Ui_showpicture.py</Source>
+    <Source>__init__.py</Source>
+    <Source>forecasting.py</Source>
+    <Source>linearPredict.py</Source>
+    <Source>main.py</Source>
+    <Source>new.py</Source>
+    <Source>openpicture.py</Source>
+    <Source>pictureTest.py</Source>
+    <Source>showpicture.py</Source>
+  </Sources>
+  <Forms>
+    <Form>NewEX.ui</Form>
+    <Form>forecasting.ui</Form>
+    <Form>showpictureEX.ui</Form>
+  </Forms>
+  <Translations/>
+  <Resources/>
+  <Interfaces/>
+  <Others/>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+  </FiletypeAssociations>
+</Project>
